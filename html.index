@@ -458,9 +458,23 @@
 
             </div>
 
-            <button
-                id="continueMusic"
-                disabled>
+            <div id="memoryModal">
+
+    <div class="modalContent">
+
+        <img id="memoryPhoto">
+
+        <h2 id="memoryTitle"></h2>
+
+        <p id="memoryText"></p>
+
+        <button id="closeMemory">
+            Close
+        </button>
+
+    </div>
+
+</div>
 
                 Continue ✨
 
