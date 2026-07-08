@@ -3553,3 +3553,166 @@ img{
 
 
 }
+.confetti{
+
+    position:fixed;
+
+    top:-20px;
+
+    width:12px;
+
+    height:20px;
+
+    background:#ffd86b;
+
+    z-index:99999;
+
+    animation:
+
+    confettiFall 5s linear forwards;
+
+}
+
+
+
+@keyframes confettiFall{
+
+
+    from{
+
+        transform:
+
+        translateY(0)
+
+        rotate(0deg);
+
+        opacity:1;
+
+    }
+
+
+    to{
+
+        transform:
+
+        translateY(110vh)
+
+        rotate(720deg);
+
+        opacity:0;
+
+    }
+
+
+}
+.finalPetal{
+
+    position:fixed;
+
+    top:-30px;
+
+    width:20px;
+
+    height:28px;
+
+    background:#ffd86b;
+
+    border-radius:
+
+    100% 0 100% 0;
+
+    z-index:100;
+
+    animation:
+
+    finalPetalFall 12s linear forwards;
+
+}
+
+
+
+@keyframes finalPetalFall{
+
+
+    from{
+
+        transform:
+
+        translateY(0)
+
+        rotate(0deg);
+
+        opacity:1;
+
+    }
+
+
+    to{
+
+        transform:
+
+        translateY(120vh)
+
+        rotate(720deg);
+
+        opacity:0;
+
+    }
+
+}
+
+
+
+
+.firefly{
+
+    position:fixed;
+
+    width:8px;
+
+    height:8px;
+
+    background:#fff2a8;
+
+    border-radius:50%;
+
+    box-shadow:
+
+    0 0 20px #ffd86b;
+
+    animation:
+
+    fireflyMove 5s infinite alternate;
+
+    z-index:50;
+
+}
+
+
+
+@keyframes fireflyMove{
+
+
+    from{
+
+        transform:
+
+        translate(0,0);
+
+        opacity:.3;
+
+    }
+
+
+    to{
+
+        transform:
+
+        translate(40px,-60px);
+
+        opacity:1;
+
+    }
+
+
+}
