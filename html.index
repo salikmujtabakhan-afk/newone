@@ -824,8 +824,9 @@
     =========================================== -->
 
     <audio id="ambientAudio"
-        src="assets/audio/ambient.mp3">
-    </audio>
+src="assets/audio/ambient.mp3"
+loop>
+</audio>
 
 
     <audio id="birthdaySong"
