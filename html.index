@@ -568,17 +568,13 @@
 
             <div id="envelope">
 
-                <div id="envelopeFront">
+    <div id="waxSeal">
 
-                    <div id="waxSeal">
+        ✦
 
-                        ✦
+    </div>
 
-                    </div>
-
-                </div>
-
-            </div>
+</div>
 
             <button id="openLetter">
 
@@ -717,11 +713,37 @@
 
             <div id="sunflowerField">
 
-                <div class="sunflower flower1"></div>
-                <div class="sunflower flower2"></div>
-                <div class="sunflower flower3"></div>
 
-            </div>
+<div class="sunflower flower1">
+
+<div class="petals"></div>
+<div class="center"></div>
+<div class="stem"></div>
+
+</div>
+
+
+
+<div class="sunflower flower2">
+
+<div class="petals"></div>
+<div class="center"></div>
+<div class="stem"></div>
+
+</div>
+
+
+
+<div class="sunflower flower3">
+
+<div class="petals"></div>
+<div class="center"></div>
+<div class="stem"></div>
+
+</div>
+
+
+</div>
 
 
             <div id="finalParticles"></div>
@@ -819,6 +841,10 @@
     <audio id="paperAudio"
         src="assets/audio/paper.mp3">
     </audio>
+
+<audio id="candleAudio"
+    src="assets/audio/candle.mp3">
+</audio>
 
 
     <audio id="clickAudio"
