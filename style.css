@@ -1,0 +1,1302 @@
+/* ==========================================================
+THE JOURNEY TO JULY 19 🌻
+Created with 🤍 by Salik
+========================================================== */
+
+
+/* =========================
+GOOGLE FONTS
+========================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Great+Vibes&family=Poppins:wght@300;400;500;600&display=swap');
+
+
+/* =========================
+ROOT COLORS
+========================= */
+
+:root{
+
+--bg:#060606;
+--card:#111111;
+--gold:#F5C542;
+--white:#ffffff;
+--text:#EAEAEA;
+--glass:rgba(255,255,255,.08);
+
+}
+
+
+/* =========================
+RESET
+========================= */
+
+*{
+
+margin:0;
+padding:0;
+box-sizing:border-box;
+
+}
+
+
+html{
+
+scroll-behavior:smooth;
+
+}
+
+
+body{
+
+background:var(--bg);
+
+color:var(--text);
+
+font-family:'Poppins',sans-serif;
+
+overflow:hidden;
+
+}
+
+
+/* =========================
+BACKGROUND
+========================= */
+
+body::before{
+
+content:"";
+
+position:fixed;
+
+left:0;
+top:0;
+
+width:100%;
+height:100%;
+
+background:
+radial-gradient(circle at top,#222 0%,#060606 70%);
+
+z-index:-2;
+
+}
+
+
+/* =========================
+FLOATING PARTICLES
+========================= */
+
+#particles{
+
+position:fixed;
+
+width:100%;
+height:100%;
+
+left:0;
+top:0;
+
+pointer-events:none;
+
+z-index:-1;
+
+}
+
+
+/* =========================
+LOADER
+========================= */
+
+#loader{
+
+position:fixed;
+
+left:0;
+top:0;
+
+width:100%;
+height:100vh;
+
+background:#000;
+
+display:flex;
+
+justify-content:center;
+align-items:center;
+
+z-index:99999;
+
+transition:1s;
+
+}
+
+
+.loader-content{
+
+text-align:center;
+
+padding:30px;
+
+}
+
+
+.loader-content h1{
+
+font-family:'Cinzel',serif;
+
+font-size:52px;
+
+color:var(--gold);
+
+margin-bottom:25px;
+
+}
+
+
+.loader-content p{
+
+font-size:20px;
+
+opacity:.85;
+
+}
+
+
+.loader-line{
+
+margin:40px auto;
+
+height:3px;
+
+width:0;
+
+background:var(--gold);
+
+animation:loaderLine 3s linear forwards;
+
+border-radius:50px;
+
+}
+
+
+@keyframes loaderLine{
+
+100%{
+
+width:250px;
+
+}
+
+}
+
+
+/* =========================
+APP
+========================= */
+
+#app{
+
+width:100%;
+
+height:100vh;
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+
+/* =========================
+SCENES
+========================= */
+
+.scene{
+
+position:absolute;
+
+left:0;
+top:0;
+
+width:100%;
+height:100vh;
+
+display:none;
+
+justify-content:center;
+align-items:center;
+
+padding:40px;
+
+}
+
+
+.scene.active{
+
+display:flex;
+
+animation:sceneFade 1s ease;
+
+}
+
+
+@keyframes sceneFade{
+
+from{
+
+opacity:0;
+transform:scale(1.03);
+
+}
+
+to{
+
+opacity:1;
+transform:scale(1);
+
+}
+
+}
+
+
+/* =========================
+CONTENT
+========================= */
+
+.content{
+
+width:min(100%,900px);
+
+text-align:center;
+
+}
+
+
+/* =========================
+CHAPTER
+========================= */
+
+.chapter{
+
+display:inline-block;
+
+padding:8px 18px;
+
+border:1px solid rgba(255,255,255,.15);
+
+border-radius:30px;
+
+background:var(--glass);
+
+color:var(--gold);
+
+font-size:14px;
+
+letter-spacing:2px;
+
+margin-bottom:25px;
+
+}
+
+
+/* =========================
+HEADINGS
+========================= */
+
+h1{
+
+font-family:'Cinzel',serif;
+
+font-size:58px;
+
+margin-bottom:20px;
+
+}
+
+
+h2{
+
+font-size:32px;
+
+margin:20px 0;
+
+}
+
+
+.subtitle{
+
+font-size:20px;
+
+opacity:.8;
+
+margin-bottom:40px;
+
+line-height:1.8;
+
+}
+
+
+/* =========================
+QUESTION BOX
+========================= */
+
+.question-box{
+
+background:var(--glass);
+
+padding:45px;
+
+border-radius:30px;
+
+backdrop-filter:blur(15px);
+
+border:1px solid rgba(255,255,255,.08);
+
+}
+
+
+/* =========================
+INPUT
+========================= */
+
+input{
+
+margin-top:25px;
+
+width:260px;
+
+padding:18px;
+
+border:none;
+
+border-radius:50px;
+
+font-size:18px;
+
+text-align:center;
+
+outline:none;
+
+}
+
+
+/* =========================
+BUTTON
+========================= */
+
+button{
+
+margin-top:30px;
+
+padding:16px 40px;
+
+background:var(--gold);
+
+color:#111;
+
+font-size:18px;
+
+border:none;
+
+border-radius:40px;
+
+cursor:pointer;
+
+transition:.35s;
+
+font-weight:600;
+
+}
+
+
+button:hover{
+
+transform:translateY(-3px);
+
+box-shadow:0 0 25px rgba(245,197,66,.55);
+
+}
+
+
+button:active{
+
+transform:scale(.97);
+
+}
+
+
+/* =========================
+UTILITY
+========================= */
+
+.hidden{
+
+display:none;
+
+}
+/* ==========================================================
+SCENE 2
+HEART
+========================================================== */
+
+#scene2{
+
+background:
+radial-gradient(circle,#1c1c1c 0%,#060606 75%);
+
+}
+
+#heart{
+
+font-size:170px;
+
+cursor:pointer;
+
+user-select:none;
+
+transition:.5s;
+
+animation:heartbeat 2s infinite;
+
+filter:drop-shadow(0 0 25px rgba(255,255,255,.35));
+
+}
+
+#heart:hover{
+
+transform:scale(1.08);
+
+}
+
+@keyframes heartbeat{
+
+0%{
+
+transform:scale(1);
+
+}
+
+25%{
+
+transform:scale(1.08);
+
+}
+
+50%{
+
+transform:scale(.98);
+
+}
+
+75%{
+
+transform:scale(1.12);
+
+}
+
+100%{
+
+transform:scale(1);
+
+}
+
+}
+
+.sunflower{
+
+font-size:190px;
+
+animation:bloom 1.3s ease forwards;
+
+}
+
+@keyframes bloom{
+
+0%{
+
+transform:scale(.2) rotate(-180deg);
+
+opacity:0;
+
+}
+
+100%{
+
+transform:scale(1) rotate(0);
+
+opacity:1;
+
+}
+
+}
+
+
+
+/* ==========================================================
+SCENE 3
+POEM
+========================================================== */
+
+#scene3{
+
+background:
+
+linear-gradient(to bottom,#1b1712,#080808);
+
+}
+
+#poem{
+
+margin-top:40px;
+
+}
+
+.poem-line{
+
+font-size:32px;
+
+font-family:'Great Vibes',cursive;
+
+margin:30px 0;
+
+opacity:0;
+
+animation:fadePoem 1s forwards;
+
+}
+
+.poem-line:nth-child(1){
+
+animation-delay:1s;
+
+}
+
+.poem-line:nth-child(2){
+
+animation-delay:3s;
+
+}
+
+.poem-line:nth-child(3){
+
+animation-delay:5s;
+
+}
+
+.poem-line:nth-child(4){
+
+animation-delay:7s;
+
+color:var(--gold);
+
+font-size:42px;
+
+}
+
+@keyframes fadePoem{
+
+from{
+
+opacity:0;
+
+transform:translateY(20px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+.choiceButtons{
+
+display:flex;
+
+justify-content:center;
+
+gap:25px;
+
+margin-top:45px;
+
+}
+
+
+
+/* ==========================================================
+SCENE 4
+BABY PHOTO
+========================================================== */
+
+#scene4{
+
+background:
+
+linear-gradient(to bottom,#f9f4e7,#e7dcc6);
+
+color:#333;
+
+}
+
+#scene4 h1,
+#scene4 h2,
+#scene4 p{
+
+color:#333;
+
+}
+
+#babyContainer{
+
+position:relative;
+
+display:inline-block;
+
+margin-top:45px;
+
+}
+
+#babyPhoto{
+
+width:320px;
+
+border-radius:24px;
+
+cursor:pointer;
+
+transition:.5s;
+
+box-shadow:
+
+0 15px 45px rgba(0,0,0,.25);
+
+}
+
+#babyPhoto:hover{
+
+transform:scale(1.03);
+
+}
+
+#kissEmoji{
+
+position:absolute;
+
+top:35%;
+
+left:55%;
+
+font-size:70px;
+
+display:none;
+
+animation:kissPop .6s ease;
+
+}
+
+@keyframes kissPop{
+
+0%{
+
+transform:scale(.2);
+
+opacity:0;
+
+}
+
+60%{
+
+transform:scale(1.25);
+
+opacity:1;
+
+}
+
+100%{
+
+transform:scale(1);
+
+opacity:1;
+
+}
+
+}
+
+.touchHint{
+
+margin-top:25px;
+
+font-size:18px;
+
+opacity:.75;
+
+}
+
+
+
+/* ==========================================================
+SCENE 5
+LIFE TIMELINE
+========================================================== */
+
+.lifeTimeline{
+
+display:grid;
+
+grid-template-columns:repeat(2,1fr);
+
+gap:30px;
+
+margin-top:50px;
+
+}
+
+.lifeCard{
+
+background:rgba(255,255,255,.08);
+
+padding:22px;
+
+border-radius:22px;
+
+backdrop-filter:blur(10px);
+
+transition:.45s;
+
+}
+
+.lifeCard:hover{
+
+transform:translateY(-8px);
+
+}
+
+.lifeCard img{
+
+width:100%;
+
+border-radius:18px;
+
+margin-bottom:18px;
+
+}
+
+.lifeCard h2{
+
+color:var(--gold);
+
+margin-bottom:15px;
+
+}
+
+
+
+/* ==========================================================
+RESPONSIVE
+========================================================== */
+
+@media(max-width:768px){
+
+#heart{
+
+font-size:120px;
+
+}
+
+.sunflower{
+
+font-size:140px;
+
+}
+
+.lifeTimeline{
+
+grid-template-columns:1fr;
+
+}
+
+#babyPhoto{
+
+width:240px;
+
+}
+
+.poem-line{
+
+font-size:24px;
+
+}
+
+.poem-line:nth-child(4){
+
+font-size:30px;
+
+}
+
+.choiceButtons{
+
+flex-direction:column;
+
+align-items:center;
+
+}
+
+}
+/* ==========================================================
+SCENE 6
+OUR JOURNEY
+========================================================== */
+
+#scene6{
+    background:linear-gradient(180deg,#050505,#121212);
+}
+
+.ourTimeline{
+    margin-top:50px;
+    display:flex;
+    flex-direction:column;
+    gap:30px;
+}
+
+.memoryCard{
+
+    background:rgba(255,255,255,.08);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:22px;
+
+    padding:30px;
+
+    backdrop-filter:blur(15px);
+
+    transition:.4s;
+
+    opacity:0;
+
+    transform:translateY(40px);
+
+}
+
+.memoryCard.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+.memoryCard:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.memoryCard h2{
+
+    color:var(--gold);
+
+    margin-bottom:15px;
+
+}
+
+.memoryCard p{
+
+    line-height:1.8;
+
+}
+
+
+
+/* ==========================================================
+SCENE 7
+LETTER
+========================================================== */
+
+#scene7{
+
+    background:
+    linear-gradient(to bottom,#d8c8a2,#f8efd8);
+
+    color:#2d2d2d;
+
+}
+
+#scene7 h1,
+#scene7 h2,
+#scene7 p{
+
+    color:#2d2d2d;
+
+}
+
+#envelope{
+
+    width:320px;
+
+    height:220px;
+
+    margin:40px auto;
+
+    position:relative;
+
+    cursor:pointer;
+
+}
+
+.envelope-back{
+
+    position:absolute;
+
+    width:100%;
+    height:100%;
+
+    background:#d7b980;
+
+    border-radius:12px;
+
+}
+
+.envelope-flap{
+
+    position:absolute;
+
+    width:100%;
+    height:110px;
+
+    background:#caa46b;
+
+    clip-path:polygon(0 0,100% 0,50% 100%);
+
+    transform-origin:top;
+
+    transition:.8s;
+
+}
+
+.wax-seal{
+
+    position:absolute;
+
+    left:50%;
+    top:90px;
+
+    transform:translateX(-50%);
+
+    width:60px;
+    height:60px;
+
+    border-radius:50%;
+
+    background:#b21f2d;
+
+    display:flex;
+
+    justify-content:center;
+    align-items:center;
+
+    color:white;
+
+    font-size:28px;
+
+}
+
+#letterPaper{
+
+    max-width:800px;
+
+    margin:auto;
+
+    background:#fffef7;
+
+    padding:45px;
+
+    border-radius:20px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.2);
+
+}
+
+#typedLetter{
+
+    font-family:'Great Vibes',cursive;
+
+    font-size:34px;
+
+    line-height:2;
+
+}
+
+.signature{
+
+    text-align:right;
+
+    margin-top:50px;
+
+}
+
+
+
+/* ==========================================================
+SCENE 8
+PHOTO GALLERY
+========================================================== */
+
+#scene8{
+
+    background:
+    linear-gradient(to bottom,#111,#050505);
+
+}
+
+.photoGallery{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+    margin-top:50px;
+
+}
+
+.photoCard{
+
+    background:white;
+
+    padding:12px;
+
+    border-radius:15px;
+
+    transform:rotate(-3deg);
+
+    transition:.4s;
+
+}
+
+.photoCard:nth-child(even){
+
+    transform:rotate(3deg);
+
+}
+
+.photoCard:hover{
+
+    transform:scale(1.06) rotate(0deg);
+
+}
+
+.photoCard img{
+
+    width:100%;
+
+    border-radius:10px;
+
+}
+
+.endingQuote{
+
+    margin-top:50px;
+
+}
+
+.endingQuote p{
+
+    margin:15px 0;
+
+    opacity:.8;
+
+}
+
+
+
+/* ==========================================================
+SCENE 9
+GIFT
+========================================================== */
+
+#scene9{
+
+    background:
+    radial-gradient(circle,#483500,#080808);
+
+}
+
+#giftBox{
+
+    font-size:180px;
+
+    cursor:pointer;
+
+    user-select:none;
+
+    animation:giftBounce 2s infinite;
+
+}
+
+@keyframes giftBounce{
+
+    0%,100%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-20px);
+
+    }
+
+}
+
+#giftReveal{
+
+    margin-top:40px;
+
+    animation:fadeIn 1.5s;
+
+}
+
+.loveText{
+
+    font-size:72px;
+
+    color:var(--gold);
+
+    animation:pulse 2s infinite;
+
+}
+
+@keyframes pulse{
+
+    50%{
+
+        transform:scale(1.05);
+
+    }
+
+}
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(20px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+
+/* ==========================================================
+CONFETTI
+========================================================== */
+
+.confetti{
+
+    position:fixed;
+
+    width:10px;
+
+    height:18px;
+
+    border-radius:3px;
+
+    animation:fall 5s linear forwards;
+
+}
+
+@keyframes fall{
+
+    from{
+
+        transform:translateY(-100px) rotate(0deg);
+
+    }
+
+    to{
+
+        transform:translateY(110vh) rotate(720deg);
+
+    }
+
+}
+
+
+
+/* ==========================================================
+FINAL MOBILE
+========================================================== */
+
+@media(max-width:768px){
+
+    h1{
+
+        font-size:36px;
+
+    }
+
+    h2{
+
+        font-size:24px;
+
+    }
+
+    p{
+
+        font-size:17px;
+
+    }
+
+    .photoGallery{
+
+        grid-template-columns:1fr;
+
+    }
+
+    #typedLetter{
+
+        font-size:24px;
+
+    }
+
+    #giftBox{
+
+        font-size:120px;
+
+    }
+
+    .loveText{
+
+        font-size:42px;
+
+    }
+
+    #envelope{
+
+        width:260px;
+
+        height:180px;
+
+    }
+
+}
