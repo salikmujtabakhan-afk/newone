@@ -282,9 +282,6 @@ document.addEventListener(
 
 
 
-            }
-        );
-
 
 
 
@@ -2454,3 +2451,5 @@ restartJourney.addEventListener(
 
 
 }
+
+});
