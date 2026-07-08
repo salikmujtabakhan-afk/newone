@@ -476,9 +476,13 @@
 
 </div>
 
-                Continue ✨
+               <button
+    id="continueMusic"
+    disabled>
 
-            </button>
+    Continue ✨
+
+</button>
 
         </div>
 
