@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color"
+          content="#111111">
+
+    <meta name="description"
+          content="A cinematic birthday experience created with love.">
+
+    <title>The Journey to July 19 🌻</title>
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:wght@300;400;500;600;700&family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="style.css">
+
+</head>
+
+<body>
+
+    <!-- ==========================================
+         GLOBAL BACKGROUND
+    =========================================== -->
+
+    <div id="backgroundEffects">
+
+        <div id="stars"></div>
+
+        <div id="floatingParticles"></div>
+
+        <div id="floatingPetals"></div>
+
+    </div>
+
+    <!-- ==========================================
+         LOADER
+    =========================================== -->
+
+    <section id="loader">
+
+        <div class="loaderContent">
+
+            <div class="loaderSun"></div>
+
+            <h1>The Journey to July 19</h1>
+
+            <p>
+                Preparing something made only for you...
+            </p>
+
+            <div class="loadingBar">
+
+                <span></span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ==========================================
+         PROGRESS
+    =========================================== -->
+
+    <div id="progressWrapper">
+
+        <div id="progressBar"></div>
+
+    </div>
+
+    <!-- ==========================================
+         MUSIC BUTTON
+    =========================================== -->
+
+    <button id="musicButton">
+
+        ♫
+
+    </button>
+    <!-- ==========================================
+         SCENE 1 : CINEMATIC INTRO
+    =========================================== -->
+
+    <section class="scene active" id="scene1">
+
+        <div class="sceneOverlay"></div>
+
+        <div class="sceneContent introContent">
+
+            <p class="introLine delay1">
+
+                Before there was us...
+
+            </p>
+
+            <h1 class="introTitle delay2">
+
+                There was You.
+
+            </h1>
+
+            <p class="introLine delay3">
+
+                A soul that made countless moments beautiful,
+                without even realizing it.
+
+            </p>
+
+            <p class="introLine delay4">
+
+                This isn't just a birthday website.
+
+            </p>
+
+            <h2 class="introEnding delay5">
+
+                It's your story.
+
+            </h2>
+
+            <button id="beginJourney">
+
+                Begin the Journey 🌻
+
+            </button>
+
+        </div>
+
+        <div class="scrollHint">
+
+            ↓
+
+        </div>
+
+    </section>
+    <!-- ==========================================
+         SCENE 2 : THE FIRST MEMORY
+    =========================================== -->
+
+    <section class="scene" id="scene2">
+
+        <div class="sceneOverlay"></div>
+
+        <div class="sceneContent puzzleContent">
+
+            <p class="chapterNumber">
+
+                Chapter I
+
+            </p>
+
+            <h2 class="chapterTitle">
+
+                The Beginning
+
+            </h2>
+
+            <p class="chapterText">
+
+                Every story has a beginning.
+                Some are written in books.
+                Ours began in a year.
+
+            </p>
+
+            <div class="memoryLock">
+
+                <div class="lockIcon">
+
+                    🔒
+
+                </div>
+
+                <p>
+
+                    Enter the year where everything began.
+
+                </p>
+
+                <input
+                    type="text"
+                    id="yearInput"
+                    maxlength="4"
+                    placeholder="YYYY"
+                    autocomplete="off">
+
+                <button id="unlockButton">
+
+                    Unlock Memory
+
+                </button>
+
+                <p id="puzzleResponse">
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- ==========================================
+         SCENE 3 : THE WHITE HEART
+    =========================================== -->
+
+    <section class="scene" id="scene3">
+
+        <div class="sceneOverlay"></div>
+
+        <div class="sceneContent heartScene">
+
+            <p class="chapterNumber">
+
+                Chapter II
+
+            </p>
+
+            <h2 class="chapterTitle">
+
+                A Heart Waiting To Bloom
+
+            </h2>
+
+            <p class="chapterText">
+
+                Every beautiful journey begins with a single heartbeat.
+            </p>
+
+            <div id="heartContainer">
+
+                <div id="glowRing"></div>
+
+                <div id="whiteHeart">
+
+                    🤍
+
+                </div>
+
+                <p id="heartHint">
+
+                    Touch the heart.
+
+                </p>
+
+            </div>
+
+            <div id="sunflowerReveal">
+
+                <div class="sunflower">
+
+                    <div class="petals"></div>
+
+                    <div class="center"></div>
+
+                    <div class="stem"></div>
+
+                    <div class="leaf leftLeaf"></div>
+
+                    <div class="leaf rightLeaf"></div>
+
+                </div>
+
+                <div id="sunflowerMessage">
+
+                    <h2>
+
+                        Happy Birthday 🌻
+
+                    </h2>
+
+                    <p>
+
+                        Some flowers bloom because of sunshine.
+
+                        Mine bloomed because of you.
+
+                    </p>
+
+                    <button id="continueTimeline">
+
+                        Continue →
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- ==========================================
+         SCENE 4 : HER JOURNEY
+    =========================================== -->
+
+    <section class="scene" id="scene4">
+
+        <div class="sceneOverlay"></div>
+
+        <div class="sceneContent timelineScene">
+
+            <p class="chapterNumber">
+
+                Chapter III
+
+            </p>
+
+            <h2 class="chapterTitle">
+
+                Before Our Story
+
+            </h2>
+
+            <p class="chapterText">
+
+                Every beautiful person carries a journey...
+                these are just a few pages from yours.
+
+            </p>
+
+            <div class="timelineContainer">
+
+                <button class="timelineArrow" id="previousMemory">
+
+                    ←
+
+                </button>
+
+                <div class="memoryCard">
+
+                    <div class="memoryImage">
+
+                        <img
+                            id="timelineImage"
+                            src="assets/images/01.jpg"
+                            alt="Memory">
+
+                    </div>
+
+                    <div class="memoryInfo">
+
+                        <h3 id="timelineTitle">
+
+                            A Little Sunshine
+
+                        </h3>
+
+                        <p id="timelineDescription">
+
+                            Every smile begins somewhere.
+                            Long before I met you,
+                            you were already making the world
+                            a little brighter.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <button class="timelineArrow" id="nextMemory">
+
+                    →
+
+                </button>
+
+            </div>
+
+            <div class="timelineDots">
+
+                <span class="active"></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </div>
+
+            <button id="continueConstellation">
+
+                Continue the Journey 🌙
+
+            </button>
+
+        </div>
+
+    </section>
+    <!-- ==========================================
+         SCENE 5 : CONSTELLATION OF MEMORIES
+    =========================================== -->
+
+    <section class="scene" id="scene5">
+
+        <div class="sceneOverlay"></div>
+
+        <div class="sceneContent constellationScene">
+
+            <p class="chapterNumber">
+
+                Chapter IV
+
+            </p>
+
+            <h2 class="chapterTitle">
+
+                A Sky Full of Memories
+
+            </h2>
+
+            <p class="chapterText">
+
+                Some memories never disappear...
+                they simply become stars.
+
+                Touch each one.
+
+            </p>
+
+            <div id="nightSky">
+
+                <div class="memoryStar" data-memory="1"></div>
+                <div class="memoryStar" data-memory="2"></div>
+                <div class="memoryStar" data-memory="3"></div>
+                <div class="memoryStar" data-memory="4"></div>
+                <div class="memoryStar" data-memory="5"></div>
+                <div class="memoryStar" data-memory="6"></div>
+                <div class="memoryStar" data-memory="7"></div>
+                <div class="memoryStar" data-memory="8"></div>
+
+                <canvas id="constellationCanvas"></canvas>
+
+            </div>
+
+            <div id="memoryCounter">
+
+                Memories Found
+
+                <span id="memoryCount">
+
+                    0 / 8
+
+                </span>
+
+            </div>
+
+            <button
+                id="continueMusic"
+                disabled>
+
+                Continue ✨
+
+            </button>
+
+        </div>
+
+    </section>
+    <!-- ==========================================
+         SCENE 6 : THE MUSIC BOX
+    =========================================== -->
+
+    <section class="scene" id="scene6">
+
+        <div class="sceneOverlay"></div>
+
+        <div class="sceneContent musicScene">
+
+            <p class="chapterNumber">
+
+                Chapter V
+
+            </p>
+
+            <h2 class="chapterTitle">
+
+                A Melody That Found You
+
+            </h2>
+
+            <p class="chapterText">
+
+                Some songs aren't just music...
+
+                They quietly become memories.
+
+            </p>
+
+            <div id="musicBox">
+
+                <div class="musicLid">
+
+                    ✨
+
+                </div>
+
+                <div class="musicBase">
+
+                    <div class="disc">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <button id="openMusicBox">
+
+                Open the Music Box
+
+            </button>
+
+            <div id="floatingPhotos">
+
+            </div>
+
+            <button
+                id="continueLetter"
+                disabled>
+
+                Continue →
+
+            </button>
+
+        </div>
+
+    </section>
+    <!-- ==========================================
+         SCENE 7 : THE ROYAL LETTER
+    =========================================== -->
+
+    <section class="scene" id="scene7">
+
+        <div class="sceneOverlay"></div>
+
+        <div class="sceneContent letterScene">
+
+            <p class="chapterNumber">
+
+                Chapter VI
+
+            </p>
+
+            <h2 class="chapterTitle">
+
+                A Letter I Always Wanted You To Read
+
+            </h2>
+
+            <p class="chapterText">
+
+                Some feelings are easier to write than to say.
+
+            </p>
+
+            <div id="envelope">
+
+                <div id="envelopeFront">
+
+                    <div id="waxSeal">
+
+                        ✦
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <button id="openLetter">
+
+                Break the Seal
+
+            </button>
+
+            <div id="letterPaper">
+
+                <div id="letterContent">
+
+                    <h2>Dear My Sunshine, 🌻</h2>
+
+                    <div id="typewriterLetter">
+
+                    </div>
+
+                    <p class="letterSignature">
+
+                        — Salik ❤️
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <button
+                id="continueCake"
+                disabled>
+
+                Continue →
+
+            </button>
+
+        </div>
+
+    </section>
+    <!-- ==========================================
+         SCENE 8 : BIRTHDAY CAKE
+    =========================================== -->
+
+    <section class="scene" id="scene8">
+
+        <div class="sceneOverlay"></div>
+
+        <div class="sceneContent cakeScene">
+
+            <p class="chapterNumber">
+
+                Chapter VII
+
+            </p>
+
+            <h2 class="chapterTitle">
+
+                Make A Wish 🌻
+
+            </h2>
+
+            <p class="chapterText">
+
+                Close your eyes for just a moment...
+
+                Think of one wish.
+
+            </p>
+
+            <div id="cakeContainer">
+
+                <div id="birthdayCake">
+
+                    <div class="cakeTop"></div>
+
+                    <div class="cakeMiddle"></div>
+
+                    <div class="cakeBottom"></div>
+
+                    <div class="candle">
+
+                        <div class="flame"></div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <button id="makeWish">
+
+                I'm Ready ✨
+
+            </button>
+
+            <div id="wishMessage">
+
+                <h2>
+
+                    Happy Birthday ❤️
+
+                </h2>
+
+                <p>
+
+                    May every dream you carry,
+                    every smile you share,
+                    and every tomorrow you step into
+                    bring you happiness.
+
+                </p>
+
+            </div>
+
+            <button
+                id="continueFinal"
+                disabled>
+
+                One Last Surprise →
+
+            </button>
+
+        </div>
+
+    </section>
+    <!-- ==========================================
+         SCENE 9 : FINAL CINEMATIC REVEAL
+    =========================================== -->
+
+    <section class="scene" id="scene9">
+
+        <div id="sunsetBackground"></div>
+
+        <div class="sceneOverlay"></div>
+
+        <div class="sceneContent finalScene">
+
+            <div id="sunflowerField">
+
+                <div class="sunflower flower1"></div>
+                <div class="sunflower flower2"></div>
+                <div class="sunflower flower3"></div>
+
+            </div>
+
+
+            <div id="finalParticles"></div>
+
+
+            <div id="finalStory">
+
+                <p class="finalLine line1">
+
+                    Every journey has a beginning...
+
+                </p>
+
+
+                <p class="finalLine line2">
+
+                    Every memory has a reason...
+
+                </p>
+
+
+                <p class="finalLine line3">
+
+                    And every beautiful story...
+
+                </p>
+
+
+                <h1 id="loveReveal">
+
+                    I LOVE YOU ❤️
+
+                </h1>
+
+
+                <p id="finalMessage">
+
+                    Thank you for being the person
+                    who makes ordinary moments
+                    feel extraordinary.
+
+                </p>
+
+
+                <p id="signature">
+
+                    — Salik 🌻
+
+                </p>
+
+
+            </div>
+
+
+            <div id="secretMessage">
+
+                <p>
+
+                    NGI × STROKPO
+
+                </p>
+
+            </div>
+
+
+            <button id="restartJourney">
+
+                Relive The Journey 🌻
+
+            </button>
+
+
+        </div>
+
+    </section>
+    <!-- ==========================================
+         AUDIO
+    =========================================== -->
+
+    <audio id="ambientAudio"
+        src="assets/audio/ambient.mp3">
+    </audio>
+
+
+    <audio id="birthdaySong"
+        src="assets/audio/birthday.mp3">
+    </audio>
+
+
+    <audio id="heartbeatAudio"
+        src="assets/audio/heartbeat.mp3">
+    </audio>
+
+
+    <audio id="paperAudio"
+        src="assets/audio/paper.mp3">
+    </audio>
+
+
+    <audio id="clickAudio"
+        src="assets/audio/click.mp3">
+    </audio>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
